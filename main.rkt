@@ -30,7 +30,7 @@
 (define ns (make-base-namespace))
 (define in (open-input-string (send text get-text)))
   (define-values (add-syntax done)
-    (make-traversal ns path))
+    (make-traversal ns src-dir))
 (parameterize ([current-annotations collector]
                [current-namespace ns]
                [current-load-relative-directory src-dir])
