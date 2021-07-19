@@ -2,6 +2,4 @@
 
 (require "a.rkt")
 
-(define bar foo)
-
-bar
+foo
